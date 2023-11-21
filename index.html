@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- booststrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-color:#DAF0FF;">
+     <div class="w-100 text-center " ><h2 style="text-shadow: 1px 1px #005DB2;" >Calculator</h2></div>
+    <div class="w-100 d-flex justify-content-center" >
+     
+        <div class="iphone rounded-2"> 
+            <div class="w-100 mt-2">
+                <input onclick="textBox()" class="w-100 text-end text_box  text-white " type="text" name="" id="result" readonly>
+            </div>
+            <div class="calc_body w-100 mt-4">
+               <div class="d-flex justify-content-evenly">
+                    <button class="rounded-4 btn_calc " style="background-color: #616161; color: #A5A5A5;" onclick="erase()" >Ac</button>
+                    <button  class="rounded-4 btn_calc" style="background-color: #616161;" onclick="lastClr()"><img class="me-1 mb-1" width="24px" style="color: #A5A5A5;" src="./img/delete.png" alt=""></button>
+                    <button  class="rounded-4 btn_calc text-white" style="background-color: #005DB2;" onclick="display('/')">/</button>
+                    <button  class="rounded-4 btn_calc text-white shadow-lg" style="background-color: #005DB2;" onclick="display('*')">*</button>
+               </div>
+            </div>
+
+            <div class="calc_body w-100 mt-5">
+                <div class="d-flex justify-content-evenly">
+                     <button class="rounded-4 btn_calc" onclick="display('7')">7</button>
+                     <button  class="rounded-4 btn_calc" onclick="display('8')">8</button>
+                     <button  class="rounded-4 btn_calc " onclick="display('9')">9</button>
+                     <button  class="rounded-4 btn_calc text-white" style="background-color: #005DB2;" onclick="display('-')">-</button>
+                </div>
+             </div>
+
+             <div class="calc_body w-100 mt-5">
+                <div class="d-flex justify-content-evenly">
+                     <button class="rounded-4 btn_calc" onclick="display('4')">4</button>
+                     <button  class="rounded-4 btn_calc" onclick="display('5')">5</button>
+                     <button  class="rounded-4 btn_calc " onclick="display('6')">6</button>
+                     <button  class="rounded-4 btn_calc_2 text-white" style="background-color: #005DB2;" onclick="display('+')">+</button>
+                </div>
+             </div>
+
+             <div class="calc_body w-100 mt-5">
+                <div class="d-flex justify-content-evenly">
+                     <button class="rounded-4 btn_calc" onclick="display('1')">1</button>
+                     <button  class="rounded-4 btn_calc" onclick="display('2')">2</button>
+                     <button  class="rounded-4 btn_calc " onclick="display('3')">3</button>
+                     <button  class="rounded-4 btn_calc_2 text-white mt-5" onclick="finalResult()" style="background-color: #005DB2;">=</button>
+                </div>
+             </div>
+             <div class="calc_body w-100 mt-5" >
+                <div class="d-flex justify-content-evenly" style=" margin-right: 86px;">
+                     <button class="rounded-4 btn_calc_3" onclick="display('0')">0</button>
+                     <button  class="rounded-4 btn_calc" onclick="display('.')">.</button>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

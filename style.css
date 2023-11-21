@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.iphone{
+    width: 374px;
+    height: 100vh;
+    background-color: #17181a;
+    box-shadow: 35px 10px 40px #63a7d6;
+}
+.text_box{
+    height: 200px;
+    background-color: #17181a;
+    font-size: 40px;
+    border: 1px solid #17181a;
+}
+.calc_body{
+    width: 308px;
+    height: 40px;
+
+}
+.btn_calc{
+    width: 62px;
+    height: 62px;
+    border: 0;
+    font-size: 30px;
+    font-weight: 100;
+    background-color: #303136;
+    color: #29A8FF;
+}
+.btn_calc_2{
+    width: 62px;
+    height: 96px;
+    border: 0;
+    font-weight: 100;
+
+}
+.btn_calc_3{
+    width: 144px;
+    height: 60px;
+    border: 0;
+    font-size: 30px;
+    font-weight: 100;
+    background-color: #303136;
+    color: #29A8FF;
+}
